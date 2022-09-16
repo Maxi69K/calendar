@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <meta name="description"
+        content="Pogledajte tekuci kalendar i izaberite i pogledajte kalendar za godine koje zelite.">
+    <meta name="keywords" content="Kalendar, calendar, datum, dani, date, days">
+    <meta name="author" content="ime autora sajta">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Main Header -->
+    <header>
+        <h1>Kalendar</h1>
+    </header>
+    <!-- Main Header END-->
+
+    <main>
+
+        <table id="calendar">
+            <thead>
+                <tr>
+                    <th colspan="7" id="title"></th>
+                </tr>
+                <tr>
+                    <th>Pon</th>
+                    <th>Uto</th>
+                    <th>Sre</th>
+                    <th>Cet</th>
+                    <th>Pet</th>
+                    <th>Sub</th>
+                    <th>Ned</th>
+                </tr>
+            </thead>
+            <tbody id="days">
+            </tbody>
+        </table>
+        <div class="form-group">
+            <label for="month">Mesec</label>
+            <input type="number" id="month" name="month" placeholder="12">
+            <label for="years">Godina</label>
+            <input type="number" id="years" name="years" placeholder="1978">
+        </div>
+        <div class="form-group">
+            <button id="resetDate">Reset</button>
+            <button id="setDate">Prikazi</button>
+        </div>
+        <div id="errors" class="form-group"></div>
+
+    </main>
+
+    <!-- Main Footer -->
+    <footer id="myFooter">
+        <small>&copy; 2022 Kalendar by <a target="_blank" href="https://webdizajn.eu.org">Maxi</a>. All Rights
+            Reserved.</small>
+    </footer>
+    <!-- Main Footer END-->
+
+    <script src="js/main.js"></script>
+    <noscript>JavaScript not enabled!</noscript>
+</body>
+
+</html>

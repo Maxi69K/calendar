@@ -1,0 +1,197 @@
+/**********************************************
+                Global styles
+**********************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+/**********************************************
+                Specific styles
+**********************************************/
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+header h1 {
+  text-align: center;
+  background-color: #000;
+  color: #ffffff;
+  padding: 10px 0;
+  font-size: 18pt;
+  letter-spacing: 10px;
+}
+
+#calendar {
+  border-collapse: collapse;
+  margin: 10px auto;
+}
+
+#calendar thead tr th {
+  font-size: 12pt;
+  background-color: #000;
+  color: #ffffff;
+}
+
+#calendar tbody tr td {
+  border: 1px solid white;
+  background-color: #000;
+  color: #ffffff;
+  padding: 5px;
+  width: 45px;
+  height: 45px;
+  font-size: 18pt;
+  text-align: center;
+}
+
+#calendar tbody tr:nth-child(odd) td {
+  background-color: #202020;
+}
+
+#calendar tbody tr td:last-child {
+  color: red;
+}
+
+#calendar tbody tr td:nth-child(6) {
+  color: rgb(134, 134, 134);
+}
+
+#calendar tbody tr td.current-day {
+  color: #1eff00;
+}
+
+.form-group {
+  width: 315px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.form-group>input {
+  width: 20%;
+}
+
+#month::placeholder,
+#years::placeholder {
+  color: #ddd;
+}
+
+#setDate,
+#resetDate {
+  width: 49%;
+  height: 30px;
+  background-color: #000;
+  color: #ffffff;
+}
+
+#myFooter {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 18px 0;
+  margin-top: 10px;
+}
+
+#myFooter small a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/**************************************
+            @media Queries
+**************************************/
+
+@media all and (min-width: 360px) {
+  #calendar thead tr th {
+    margin: 20px auto;
+    font-size: 16pt;
+  }
+
+  #calendar tbody tr td {
+    border: 2px solid white;
+    width: 49px;
+    height: 49px;
+    font-size: 22pt;
+  }
+
+  .form-group {
+    width: 343px;
+  }
+
+  .form-group>input,
+  label {
+    width: 60px;
+    height: 25px;
+    font-size: 14pt;
+    padding: 5px;
+  }
+
+  #setDate,
+  #resetDate {
+    height: 35px;
+    font-size: 12pt;
+  }
+
+  #myFooter {
+    margin-top: 20px;
+  }
+}
+
+@media all and (min-width: 576px) {
+  header h1 {
+    font-size: 30pt;
+    letter-spacing: 10px;
+  }
+
+  #calendar thead tr th {
+    font-size: 26pt;
+  }
+
+  #calendar tbody tr td {
+    border: 5px solid white;
+    width: 80px;
+    height: 80px;
+    font-size: 32pt;
+  }
+
+  .form-group {
+    width: 560px;
+  }
+
+  .form-group>input,
+  label {
+    width: 80px;
+    height: 30px;
+    font-size: 17pt;
+  }
+
+  #setDate,
+  #resetDate {
+    height: 40px;
+    font-size: 14pt;
+  }
+}
+
+@media all and (min-width: 768px) {
+  #calendar tbody tr td {
+    width: 90px;
+    height: 90px;
+  }
+
+  .form-group {
+    width: 630px;
+  }
+
+  #myFooter {
+    padding: 15px 0;
+    margin-top: 0;
+  }
+}
